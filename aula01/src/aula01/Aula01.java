@@ -16,7 +16,7 @@ public class Aula01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("aula01.Aula01.main()");
+        System.out.println("Aula 01 Lab Noite");
     }
     
 }

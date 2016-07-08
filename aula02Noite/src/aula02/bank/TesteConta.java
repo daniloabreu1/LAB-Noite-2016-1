@@ -12,22 +12,27 @@ package aula02.bank;
 public class TesteConta {
     
     public static void main(String args[]){
+        System.out.println("Quantidade de Contas: "+Conta.getQtConta());
+        
         Cliente c1 = new Cliente();
         c1.nome="Maria Clara";
         c1.setCpf("11122233344");
         c1.setEndereco("Rua das Baraúnas");
         c1.idade=20;
         
-        Conta conta1 = new Conta();
+        Conta conta1 = new Conta(c1);
         conta1.setNumeroConta(1);
         conta1.setLimite(1000);
         conta1.setSaldo(500);
-        conta1.setTitular(c1);
-        
+         
         System.out.println("Cliente: "+conta1.getTitular());
         System.out.println("Conta: "+conta1.getNumeroConta());
         System.out.println("Saldo: "+conta1.getSaldo());
         System.out.println("Limite: "+conta1.getLimite());
+        System.out.println("Quantidade de Contas: "+Conta.getQtConta());
+        
+        Conta conta2 = new Conta(c1);
+        System.out.println("Quantidade de Contas: "+Conta.getQtConta());
     }
     
 }

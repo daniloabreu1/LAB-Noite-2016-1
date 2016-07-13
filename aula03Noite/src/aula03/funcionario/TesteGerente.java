@@ -21,6 +21,8 @@ public class TesteGerente {
         System.out.println("Nome: "+f1.getNome());
         System.out.println("Salario: "+f1.getSalario());
         System.out.println("Bonificacao "+f1.getBonificacao());
+        
+        
     }
     
 }

@@ -17,10 +17,6 @@ public class Conta {
     private Cliente titular;
     private static int qtContas = 0;
 
-    public Conta() {
-
-    }
-
     public Conta(Cliente titular) {
         this.setTitular(titular);
         qtContas++;
